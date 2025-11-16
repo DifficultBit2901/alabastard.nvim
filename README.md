@@ -1,3 +1,7 @@
+# Fork
+
+This fork's goal is to make the light theme's background a bit dimmer, since I personally find the original's pure white a bit too bright.
+
 # Alabastard
 
 A theme to replicate some of the nice colors of the alabaster theme from tonsky.

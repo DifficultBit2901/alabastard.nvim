@@ -19,7 +19,7 @@ M.setup = function()
 			punctuation = "#8E8E8E",
 		},
 		light = {
-			bg = "#FFFFFF",
+			bg = "#EFEFEF",
 			fg = "#000000",
 			red = "#CC3333",
 			redbg = "#FFE0E0",
