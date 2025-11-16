@@ -19,7 +19,7 @@ M.setup = function()
 			punctuation = "#8E8E8E",
 		},
 		light = {
-			bg = "#EAEAEA",
+			bg = "#F0F0F0",
 			fg = "#000000",
 			red = "#CC3333",
 			redbg = "#FFE0E0",
@@ -119,26 +119,20 @@ M.setup = function()
 	vim.api.nvim_set_hl(0, "PmenuExtra", { fg = p.fg, bg = p.linecolumn })
 	vim.api.nvim_set_hl(0, "PmenuExtraSel", { fg = p.fg, bg = p.select })
 
+	-- buffer line
+	vim.api.nvim_set_hl(0, "BufferCurrent", { fg = p.bg })
+	vim.api.nvim_set_hl(0, "BufferCurrentBtn", { fg = p.bg })
+	vim.api.nvim_set_hl(0, "BufferCurrentPin", { fg = p.bg })
+	vim.api.nvim_set_hl(0, "BufferCurrentPinBtn", { fg = p.bg })
+	vim.api.nvim_set_hl(0, "BufferCurrentIcon", { fg = p.bg })
+	vim.api.nvim_set_hl(0, "BufferDefaultCurrent", { fg = p.bg })
+	vim.api.nvim_set_hl(0, "BufferDefaultCurrentBtn", { fg = p.bg })
+	vim.api.nvim_set_hl(0, "BufferDefaultCurrentPin", { fg = p.bg })
+	vim.api.nvim_set_hl(0, "BufferDefaultCurrentPinBtn", { fg = p.bg })
+	vim.api.nvim_set_hl(0, "BufferDefaultCurrentIcon", { fg = p.bg })
+
 	-- clear existing filetype highlights for this theme
 	vim.api.nvim_clear_autocmds({ group = "AlabastardAutocmds" })
-
-	-- Clojure keywords
-	vim.api.nvim_create_autocmd("FileType", {
-		pattern = "clojure",
-		group = "AlabastardAutocmds",
-		callback = function()
-			vim.api.nvim_set_hl(0, "clojureKeyword", { fg = p.purple, bold = true })
-		end,
-	})
-
-	-- Elixir atoms
-	vim.api.nvim_create_autocmd("FileType", {
-		pattern = "elixir",
-		group = "AlabastardAutocmds",
-		callback = function()
-			vim.api.nvim_set_hl(0, "elixirAtom", { fg = p.purple, bold = true })
-		end,
-	})
 end
 
 return M
