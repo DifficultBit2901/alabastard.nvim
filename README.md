@@ -34,7 +34,7 @@ you are not using those plugins, then this theme is not for you.
 
 | Alabastard Light | Alabastard Dark |
 :-----------------:|:---------------:|
-|![clj light theme example](./images/AlabastardLight.png)|![clj dark theme example](./images/AlabastardDark.png)|
+| ![js light theme example](./images/AlabastardLight.png) | ![js dark theme example](./images/AlabastardDark.png) |
 
 ### Originals and alternatives
 
